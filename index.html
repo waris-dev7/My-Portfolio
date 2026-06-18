@@ -2,26 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Waris Mandozai · Full‑stack Dev</title>
+    <!-- Fonts & Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- external CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER with hamburger -->
     <header>
       <img
         src="assests/portfolio-creative-text-banner-with-black-background-illustration_755074-98.avif"
-        alt=""
+        alt="Waris Mandozai logo"
       />
-      <nav>
-        <a href="#projects">PROJECTS</a>
-      </nav>
-      <a href="#cantact">Cantact Me</a>
+
+      <!-- Hamburger toggle (visible on mobile) -->
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- nav wrapper -->
+      <div class="nav-wrapper" id="navWrapper">
+        <nav>
+          <a href="#projects">PROJECTS</a>
+        </nav>
+        <a href="#cantact" class="header-cta">Contact Me</a>
+      </div>
     </header>
+
+    <!-- HERO -->
     <section class="hero">
       <div class="herodesc">
         <div class="name">
@@ -33,135 +56,178 @@
           <p>
             I build scalable, full-stack web applications that bridge <br />
             the gap between elegant user interfaces and robust backend <br />
-            logic. Turning complex business requirements into seamless,
-            high-performance <br />
-            digital products.
+            logic.
           </p>
         </div>
       </div>
     </section>
+
+    <!-- PROJECTS -->
     <section class="projects" id="projects">
-      <div class="project-title" 
-      data-aos="flip-up" 
-          data-aos-delay="200" 
-          data-aos-offset="100"  
-          data-aos-duration="1500">
-        <h1 >PROJECTS</h1>
+      <div
+        class="project-title"
+        data-aos="flip-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h1>PROJECTS</h1>
         <div class="cards">
-          <div class="card" 
-          data-aos="zoom-in-right"
-          data-aos-delay="100" 
-          data-aos-offset="300"
-          data-aos-duration="1500">
+          <div
+            class="card"
+            data-aos="zoom-in-right"
+            data-aos-delay="100"
+            data-aos-offset="300"
+            data-aos-duration="1500"
+          >
             <div class="img">
-              <img src="assests/restaurant.png" alt="">
+              <img src="assests/restaurant.png" alt="Restaurant project" />
             </div>
             <div class="cardlast">
               <h2>Project1</h2>
-            <a href="https://waris-dev7.github.io/Restaurant-website/" target="_blank">View</a>
+              <a
+                href="https://waris-dev7.github.io/Restaurant-website/"
+                target="_blank"
+                >View</a
+              >
             </div>
           </div>
-          <div class="card" 
-          data-aos="zoom-in-right"
-          data-aos-delay="100" 
-          data-aos-offset="300"
-          data-aos-duration="1500">
+          <div
+            class="card"
+            data-aos="flip-down"
+            data-aos-delay="300"
+            data-aos-offset="300"
+            data-aos-duration="1500"
+          >
             <div class="img">
-              <img src="assests/Screenshot 2026-06-17 125303.png" alt="">
+              <img
+                src="assests/Screenshot 2026-06-17 125303.png"
+                alt="Ecommerce project"
+              />
             </div>
             <div class="cardlast">
               <h2>Project2</h2>
-            <a href="https://waris-dev7.github.io/ecommerce-website/" target="_blank">View</a>
+              <a
+                href="https://waris-dev7.github.io/ecommerce-website/"
+                target="_blank"
+                >View</a
+              >
             </div>
           </div>
-          <div class="card" 
-          data-aos="zoom-in-right"
-          data-aos-delay="100" 
-          data-aos-offset="300"
-          data-aos-duration="1500">
+          <div
+            class="card"
+            data-aos="flip-up"
+            data-aos-delay="600"
+            data-aos-offset="300"
+            data-aos-duration="1500"
+          >
             <div class="img">
-              <img src="assests/proj1.png" alt="">
+              <img src="assests/gym.png" alt="GYM website" />
             </div>
             <div class="cardlast">
               <h2>Project3</h2>
-            <a href="https://waris-dev7.github.io/cards-section/" target="_blank">View</a>
+              <a
+                href="https://waris-dev7.github.io/GYM-Website/"
+                target="_blank"
+                >View</a
+              >
             </div>
           </div>
-          <div class="card" 
-          data-aos="flip-up" 
-          data-aos-delay="200" 
-          data-aos-offset="300"  
-          data-aos-duration="1500">
+          <div
+            class="card"
+            data-aos="zoom-in-left"
+            data-aos-delay="900"
+            data-aos-offset="300"
+            data-aos-duration="1500"
+          >
             <div class="img">
-              <img src="assests/gym.png" alt="">
+              <img src="assests/proj3.png" alt="Portfolio project" />
             </div>
             <div class="cardlast">
               <h2>Project4</h2>
-            <a href="https://waris-dev7.github.io/GYM-Website/" target="_blank">View</a>
+              <a href="https://waris-dev7.github.io/portfolio/" target="_blank"
+                >View</a
+              >
             </div>
-          </div>
-          <div class="card" 
-          data-aos="zoom-in-left" 
-          data-aos-delay="300" 
-          data-aos-offset="300"  
-          data-aos-duration="1500">
-            <div class="img">
-              <img src="assests/proj3.png" alt="">
-            </div>
-            <div class="cardlast">
-              <h2>Project5</h2>
-            <a href="https://waris-dev7.github.io/portfolio/" target="_blank">View</a>
-            </div>
-          </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- CONTACT SECTION -->
     <section class="cantact" id="cantact">
-      <div class="title" 
-      data-aos="flip-up" 
-          data-aos-delay="200" 
-          data-aos-offset="100"  
-          data-aos-duration="1500">
-        <h1>Cantact Me</h1>
+      <div
+        class="title"
+        data-aos="flip-up"
+        data-aos-delay="200"
+        data-aos-offset="100"
+        data-aos-duration="1500"
+      >
+        <h1>Contact Me</h1>
         <h3>Let's work together on your next project.</h3>
       </div>
       <div class="cantlast">
-        <form action="" class="form" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="200" >
-        <div class="finput">
-          <h4>name</h4>
-        <input type="text" placeholder="Your Name">
+        <form
+          action=""
+          class="form"
+          data-aos="zoom-in-right"
+          data-aos-offset="200"
+          data-aos-delay="200"
+        >
+          <div class="finput">
+            <h4>name</h4>
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div class="sinput">
+            <h4>Email</h4>
+            <input type="text" placeholder="example@gmail.com" />
+          </div>
+          <textarea placeholder="What do you want to build...."></textarea>
+          <input type="submit" class="submit" value="Send" />
+        </form>
+        <div
+          class="cantlastright"
+          data-aos="zoom-in-left"
+          data-aos-offset="200"
+          data-aos-delay="400"
+        >
+          <div class="cantname">
+            <i class="fa-solid fa-phone"></i>
+            <h3>+93 774951674</h3>
+          </div>
+          <div class="cantname">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>warismandozai0@gmail.com</h3>
+          </div>
+          <div class="cantname">
+            <i class="fa-solid fa-location"></i>
+            <h3>Bagrami B project</h3>
+          </div>
         </div>
-        <div class="sinput">
-          <h4>Email</h4>
-        <input type="text" placeholder="example@gmail.com">
-        </div>
-        <textarea name="" id="" placeholder="What do you want to build...."></textarea>
-        <input type="submit" class="submit">
-      </form>
-      <div class="cantlastright" data-aos="zoom-in-left" data-aos-offset="200" data-aos-delay="400">
-        <div class="cantname">
-          <i class="fa-solid fa-phone"></i>
-          <h3>+93 774951674</h3>
-        </div>
-        <div class="cantname">
-          <i class="fa-solid fa-envelope"></i>
-          <h3>warismandozai0@gmail.com</h3>
-        </div>
-        <div class="cantname">
-          <i class="fa-solid fa-location"></i>
-          <h3>Bagrami B project</h3>
-        </div>
-      </div>
       </div>
     </section>
 
+    <!-- AOS JS + toggle script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: false, mirror: false });
 
+      // Mobile menu toggle
+      const toggle = document.getElementById("menuToggle");
+      const wrapper = document.getElementById("navWrapper");
 
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        wrapper.classList.toggle("open");
+      });
 
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+      // close menu on link click (optional)
+      document.querySelectorAll(".nav-wrapper a").forEach((link) => {
+        link.addEventListener("click", () => {
+          toggle.classList.remove("active");
+          wrapper.classList.remove("open");
+        });
+      });
+    </script>
   </body>
 </html>
